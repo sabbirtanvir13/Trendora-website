@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { IoIosStar } from "react-icons/io";
+import { NavLink } from "react-router";
 
 const AllCategoryGallery = () => {
     const [products, setProducts] = useState([]);
@@ -68,8 +70,9 @@ const AllCategoryGallery = () => {
             {filtered.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {filtered.map((product) => (
-                        <div
+                        <NavLink
                             key={product.id}
+                          to={`/details/${product.id}`} 
                             className="rounded-xl overflow-hidden shadow-lg hover:shadow-[#28C76F]/50 transition-all duration-300 "
                         >
                             <img
@@ -79,26 +82,28 @@ const AllCategoryGallery = () => {
                             />
                             
 
-                            <div className="card-body">
-                                <div className="p-4">   <h3 className="text-xl font-semibold">{product.name || "Unnamed Product"}</h3>
+                            <div className="card-body bg-purple-300">
+                                <div className="">  
+                                    
+                               <h3 className="text-xl text-black font-semibold">{product.name}</h3>
 
-                                    <p className="t mt-1">{product.category}</p>
+                                    <p className="text-base-300 mt-1">{product.category}</p>
 
                                 </div>
                             
                                 <div className="mt-3 flex items-center gap-3">
                                     {product.oldPrice && (
-                                        <span className="text-gray-400 line-through text-sm">${product.oldPrice.toFixed(2)}</span>
+                                        <span className="text-gray-600 line-through text-sm">${product.oldPrice.toFixed(2)}</span>
                                     )}
                                     <span className="text-[#ff4655] font-bold text-lg">${product.price.toFixed(2)}</span>
                                 </div>
 
                                 <div className="card-actions flex justify-between">
-                                    <div className="badge ">{product.rating}</div>
+                                    <div className="badge "><IoIosStar />{product.rating}</div>
                                     <div className="badge badge-outline"></div>
                                 </div>
                             </div>
-                        </div>
+                        </NavLink>
 
 
                     ))}

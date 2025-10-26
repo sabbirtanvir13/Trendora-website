@@ -3,6 +3,7 @@ import HomeLayout from "../layout/HomeLayout";
 import Home from "../pages/Home";
 import Details from "../pages/Details";
 import AllCategoryGallery from "../pages/AllCategoryGallery";
+import AddToCart from "../pages/AddToCart";
 
 const router = createBrowserRouter([
     {
@@ -15,12 +16,16 @@ const router = createBrowserRouter([
             },
 
             {
-             path:'//details/ :id',
+             path:'/details/:id',
              element:<Details></Details>
             },
             {
              path:'/allcetagory',
              element:<AllCategoryGallery></AllCategoryGallery>
+            },
+            {
+             path:'/cart',
+             element:<AddToCart></AddToCart>
             }
 
         ]

@@ -4,11 +4,11 @@ import { NavLink } from 'react-router';
 
 const Header = () => {
     const links = <>
-        <NavLink><li className='mr-3'>🏠Home</li></NavLink>
+        <NavLink to="/"><li className='mr-3'>🏠Home</li></NavLink>
 
-        <NavLink><li className='mr-3' >🛍️ Shop</li></NavLink>
+        <NavLink to="/allcetagory"><li className='mr-3' >🛍️ Shop</li></NavLink>
 
-        <NavLink><li className='mr-3'>📞Contact</li></NavLink>
+        <NavLink to="/contact"><li className='mr-3'>📞Contact</li></NavLink>
 
     </>
     return (
@@ -37,23 +37,10 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                      <p className='mr-5'><FaShoppingCart/></p>
-                    <label className="input">
-                        <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <g
-                                strokeLinejoin="round"
-                                strokeLinecap="round"
-                                strokeWidth="2.5"
-                                fill="none"
-                                stroke="currentColor"
-                            >
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <path d="m21 21-4.3-4.3"></path>
-                            </g>
-                        </svg>
-                        <input type="search" className="grow" placeholder="Search" />
-                    
-                    </label>
+                   <NavLink to="/cart">
+                       <p className='mr-5'><FaShoppingCart/></p>
+                   </NavLink>
+                  
                 </div>
             </div>
         </nav>
