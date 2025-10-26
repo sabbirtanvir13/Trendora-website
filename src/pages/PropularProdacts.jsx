@@ -37,11 +37,11 @@ const PropularProdacts = () => {
               alt={product.title}
               className="w-full h-56 object-cover"
             />
-            <div className="p-4">
+            <div className="p-4 ">
               <h1 className="text-xl font-semibold">{product.name}</h1>
               <p className="text-gray-400 mt-1">Rating: {product.ratings} ⭐</p>
               <p className="text-gray-400 mt-1">Category: {product.category}</p>
-              <p className="text-gray-400 mt-1">Developer: {product.developer}</p>
+              <p className="text-gray-400 mt-1">Price : $ {product.price}</p>
             </div>
           </NavLink>
         ))}

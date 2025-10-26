@@ -17,3 +17,6 @@ html, body, #root {
   flex-direction: column;
 }
 
+nav li.active{
+  text-decoration: underline;
+}

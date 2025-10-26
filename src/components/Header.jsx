@@ -1,14 +1,14 @@
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import { NavLink } from 'react-router';
-
+import "../App.css"
 const Header = () => {
     const links = <>
-        <NavLink to="/"><li className='mr-3'>🏠Home</li></NavLink>
+        <NavLink className="mr-3" to="/"> 🏠Home</NavLink>
 
-        <NavLink to="/allcetagory"><li className='mr-3' >🛍️ Shop</li></NavLink>
+        <NavLink className="mr-3" to="/allcetagory">🛍️ Shop</NavLink>
 
-        <NavLink to="/contact"><li className='mr-3'>📞Contact</li></NavLink>
+        <NavLink className="mr-3" to="/contact">📞Contact</NavLink>
 
     </>
     return (
