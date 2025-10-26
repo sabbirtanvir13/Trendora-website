@@ -1,0 +1,16 @@
+/* App.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ background: linear-gradient(135deg, #0023FF, #7A00FF);
+  font-family: sans-serif;
+}
+
+#root > div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
