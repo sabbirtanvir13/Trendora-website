@@ -33,12 +33,12 @@ const PropularProdacts = () => {
             className="rounded-xl overflow-hidden shadow-lg hover:shadow-[#ff4655]/50 transition-shadow duration-300 block"
           >
             <img
-              src={product.coverPhoto}
+              src={product.image}
               alt={product.title}
               className="w-full h-56 object-cover"
             />
             <div className="p-4">
-              <h1 className="text-xl font-semibold">{product.title}</h1>
+              <h1 className="text-xl font-semibold">{product.name}</h1>
               <p className="text-gray-400 mt-1">Rating: {product.ratings} ⭐</p>
               <p className="text-gray-400 mt-1">Category: {product.category}</p>
               <p className="text-gray-400 mt-1">Developer: {product.developer}</p>
@@ -49,7 +49,7 @@ const PropularProdacts = () => {
       </div>
       </Marquee>
 
-      <NavLink to="/games">
+      <NavLink to="/allcetagory">
         <button className="w-full sm:w-auto px-6 py-3 bg-[#ff4655] hover:bg-[#ff2a3a] text-white font-semibold rounded-lg transition-all duration-300 shadow-[0_0_15px_#ff4655] block mx-auto mt-10">
           See All
         </button>
