@@ -4,7 +4,7 @@ import gift from "../assets/wired-outline-412-gift-hover-roll.png"
 import support from "../assets/wired-outline-981-consultation-hover-conversation.png"
 const Features = () => {
     return (
-        <div className='flex gap-4 bg-white p-7 mt-5   '>
+        <div className=' md:flex flex-row gap-4 bg-white p-7 mt-5 ml-[50px]   '>
             <div className='p-3'>
                 <img className='h-[100px]' src={dele} alt="" />
             <h1 className='text-black font-bold'>Free Shipping</h1>
@@ -30,4 +30,3 @@ const Features = () => {
 };
 
 export default Features;
-// Free Shipping Free worldwide shipping on all orders over $100 30 days return Returning your order for free is easy: just send us an email Gift cards Give something extraordinary with our gift cards Need advice? Ask us! Or call us on: +45 3 4564 2355 ki name eigulo file

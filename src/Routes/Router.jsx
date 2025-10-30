@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Details from "../pages/Details";
 import AllCategoryGallery from "../pages/AllCategoryGallery";
 import AddToCart from "../pages/AddToCart";
+import ContactSection from "../pages/ContactSection";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
              path:'/cart',
              element:<AddToCart></AddToCart>
+            },
+            {
+             path:'/contact',
+             element:<ContactSection></ContactSection>
             }
 
         ]

@@ -4,7 +4,8 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
- background: linear-gradient(135deg, #0023FF, #7A00FF);
+ /* background: linear-gradient(135deg, #0023FF, #7A00FF); */
+ background-color: white;
   background-repeat: no-repeat; 
    background-size: cover;  
     background-attachment: fixed;  
@@ -17,6 +18,21 @@ html, body, #root {
   flex-direction: column;
 }
 
-nav li.active{
-  text-decoration: underline;
+.nav-link {
+  color: gray;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: normal;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #ff4655;
+}
+
+/* Active link style */
+.nav-link.active {
+  color: #ff4655;
+  font-weight: bold;
 }

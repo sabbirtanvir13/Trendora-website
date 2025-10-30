@@ -36,7 +36,8 @@ const Footer = () => {
                     </div>
                 </fieldset>
             </form>
-        </footer>
+        </footer> 
+        
     );
 };
 

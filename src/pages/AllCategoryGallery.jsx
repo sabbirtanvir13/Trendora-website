@@ -37,7 +37,7 @@ const AllCategoryGallery = () => {
     return (
         <div className="max-w-6xl mx-auto px-4 py-12">
 
-            <h2 className="text-4xl font-bold text-center mb-8">
+            <h2 className="text-4xl text-black font-bold text-center mb-8">
                 Browse by <span className="text-[#ff4655]">Category</span>
             </h2>
 
